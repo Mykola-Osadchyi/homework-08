@@ -1,0 +1,182 @@
+/* montserrat-regular - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'),
+    url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('../fonts/montserrat-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-700 - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'),
+    url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('../fonts/montserrat-v14-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-300 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'),
+    url('../fonts/roboto-v20-latin-300.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('../fonts/roboto-v20-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-regular - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'),
+    url('../fonts/roboto-v20-latin-regular.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('../fonts/roboto-v20-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+:root {
+  --first-font: 'Montserrat', sans-serif;
+  --second-font: 'Roboto', sans-serif;
+  --first-color: rgb(255, 255, 255);
+  --second-color: rgb(51, 51, 51);
+  --third-color: rgb(102, 102, 102);
+  --fourth-color: rgb(255, 78, 80);
+  --fifth-color: rgb(26, 25, 21);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  background-color: var(--first-color);
+}
+
+.container {
+  width: 320px;
+  margin: 0 auto;
+  outline: 1px solid red;
+}
+
+/* ! Header */
+.main-header {
+  padding: 24px 0px 84px 0px;
+  background-color: var(--fifth-color);
+  background-image: url(../img/header-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-header-site-logotype-text {
+  font-size: 20px;
+  font-family: var(--first-font);
+  color: var(--first-color);
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  margin-bottom: 34px;
+}
+
+.main-header-registration-button {
+  font-size: 14px;
+  font-family: var(--first-font);
+  color: var(--first-color);
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  background-color: rgba(26, 25, 21, 0);
+}
+
+.log-in {
+  width: 80px;
+  height: 40px;
+}
+
+.sign-up {
+  width: 94px;
+  height: 40px;
+  margin-bottom: 120px;
+}
+
+.main-header-registration-button:hover,
+.main-header-registration-button:focus {
+  border-color: var(--first-color);
+}
+
+.main-header-title {
+  font-size: 30px;
+  font-family: var(--first-font);
+  color: var(--first-color);
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.main-header-description {
+  font-size: 18px;
+  font-family: var(--second-font);
+  color: var(--first-color);
+  line-height: 1.2;
+  text-align: center;
+  font-weight: 300;
+  max-width: 224px;
+  margin-bottom: 18px;
+}
+
+.main-header-button {
+  font-size: 14px;
+  font-family: var(--first-font);
+  color: var(--first-color);
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  border-style: none;
+  border-radius: 20px;
+  background-color: var(--fourth-color);
+  width: 280px;
+  height: 40px;
+}
+
+.wraper,
+.main-header-registration-button-wraper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
