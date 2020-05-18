@@ -90,7 +90,17 @@ body {
   outline: 1px solid red;
 }
 
-/* ! Header */
+/* ! Mobile */
+@media (max-width: 767px) {
+  .section-partners-list-item:not(:last-child) {
+    margin-bottom: 28px;
+  }
+  .main-header-description {
+    max-width: 224px;
+  }
+}
+
+/* ! Header - Mobile */
 .main-header {
   padding: 18px 0px 138px 0px;
   background-color: var(--fifth-color);
@@ -162,8 +172,7 @@ body {
   line-height: 1.2;
   text-align: center;
   font-weight: 300;
-  max-width: 224px;
-  margin-bottom: 14px;
+  margin: 0px auto 14px;
 }
 
 .main-header-button {
@@ -178,22 +187,23 @@ body {
   background-color: var(--fourth-color);
   width: 280px;
   height: 40px;
+  display: block;
+  margin: 0 auto;
 }
 
-.wraper,
 .main-header-registration-button-wraper {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-/* ! Serction partners */
+/* ! Serction partners - Mobile */
 .section-partners {
-  padding: 72px 0px 56px 0px;
+  padding: 64px 0px 56px 0px;
 }
 
 .section-partners-title {
-  margin: 18px;
+  margin-bottom: 18px;
   font-size: 22px;
   color: var(--second-color);
   font-family: var(--first-font);
@@ -206,11 +216,11 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 28px;
 }
 
 .section-partners-list-item {
   width: 218px;
-  margin-bottom: 28px;
 }
 
 .section-partners-list-item-image-wraper {
@@ -287,4 +297,94 @@ body {
   border: 2px solid var(--fourth-color);
   margin: 0 auto;
   display: block;
+}
+
+/* ! Tablet */
+@media (min-width: 768px) and (max-width: 959px) {
+  .section-partners-list-item:first-child {
+    margin-bottom: 58px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 670px;
+  }
+
+  /* ! Header - Tablet */
+  .main-header {
+    padding: 38px 0px 234px 0px;
+    background-image: url(../img/header-tablet.png);
+  }
+
+  .main-header-registration-button-wraper {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 138px;
+  }
+
+  .sign-up {
+    margin-bottom: 0px;
+    order: -1;
+  }
+
+  .log-in {
+    margin-left: auto;
+  }
+
+  .main-header-title {
+    font-size: 52px;
+    margin-bottom: 26px;
+  }
+
+  .main-header-description {
+    font-size: 24px;
+    margin-bottom: 36px;
+  }
+
+  .main-header-button {
+    width: 226px;
+  }
+
+  /* ! Serction partners - Tablet */
+  .section-partners {
+    padding: 66px 90px 56px 90px;
+  }
+  .section-partners-title {
+    margin-bottom: 34px;
+  }
+
+  .section-partners-list {
+    margin-bottom: 38px;
+    justify-content: space-between;
+  }
+
+  .first-position {
+    order: -2;
+  }
+  .second-position {
+    order: -1;
+  }
+
+  .section-partners-button {
+    width: 198px;
+    height: 44px;
+  }
+}
+
+/* ! Desktop */
+@media (min-width: 960px) {
+  .container {
+    width: 940px;
+  }
+
+  .main-header {
+    padding-top: 36px;
+    background-image: url(../img/header-desktop.png);
+  }
+
+  .section-partners {
+    padding: 66px 0px 56px 0px;
+  }
 }
